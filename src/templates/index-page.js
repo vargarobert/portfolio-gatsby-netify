@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby";
 
 import Layout from "../components/Layout";
 import Features from "../components/Features";
-import BlogRoll from "../components/PortfolioRoll";
+import PortfolioRoll from "../components/PortfolioRoll";
 import Header from "../components/Header";
 
 export const IndexPageTemplate = ({
@@ -80,9 +80,9 @@ export const IndexPageTemplate = ({
                   <h3 className="has-text-weight-semibold is-size-2">
                     Portfolio
                   </h3>
-                  <BlogRoll />
+                  <PortfolioRoll />
                   <div className="column is-12 has-text-centered">
-                    <Link className="btn-primary" to="/blog">
+                    <Link className="btn-primary" to="/portfolio">
                       See all
                     </Link>
                   </div>

@@ -1,7 +1,7 @@
 import React from "react";
 
 import Layout from "../../components/Layout";
-import BlogRoll from "../../components/PortfolioRoll";
+import PortfolioRoll from "../../components/PortfolioRoll";
 import Header from "../../components/Header";
 
 export default class PortfolioIndexPage extends React.Component {
@@ -17,7 +17,7 @@ export default class PortfolioIndexPage extends React.Component {
         <section className="section">
           <div className="container">
             <div className="content">
-              <BlogRoll />
+              <PortfolioRoll />
             </div>
           </div>
         </section>
