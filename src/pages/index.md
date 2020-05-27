@@ -7,7 +7,7 @@ subheading: ""
 mainpitch:
   title: ""
   description: >
-     I’m Robert and I have a passion for UI/UX design and front-end development for Web and iOS. Check out my portfolio to see what I’m up to!
+     I’m Robert and I have a passion for UI/UX design and client-side engineering for the Web and iOS. Check out my portfolio to see what I’m up to!
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
   java’s origin and support the farmers that grew it. We take coffee production,
