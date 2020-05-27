@@ -10,7 +10,7 @@ export default class BlogIndexPage extends React.Component {
       <Layout>
         <Header
           style={{
-            backgroundImage: `url('/img/blog-index.png')`,
+            backgroundImage: `url('/img/blog-index.jpg')`,
           }}
           title="Portfolio"
         />
