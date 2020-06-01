@@ -16,12 +16,14 @@ export const PortfolioPostTemplate = ({
 }) => {
   const PostContent = contentComponent || Content;
 
-  //TEMP video iframe stretch fixup
-  content = content.replace(
-    /<iframe/g,
-    '<div class="video-wrapper has-margin-bottom-15"><iframe'
-  );
-  content = content.replace(/<\/iframe>/g, "</iframe></div>");
+  //TEMP video iframe stretch fixup, parsing not applicable to Netlify CMS
+  if(typeof content === 'string') {
+    content = content.replace(
+        /<iframe/g,
+        '<div class="video-wrapper has-margin-bottom-15"><iframe'
+    );
+    content = content.replace(/<\/iframe>/g, "</iframe></div>");
+  }
 
   return (
     <section className="section">
