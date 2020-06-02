@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
+import Gallery from "@browniebroke/gatsby-image-gallery";
 
 export const PortfolioPostTemplate = ({
   content,
@@ -13,14 +14,16 @@ export const PortfolioPostTemplate = ({
   tags,
   title,
   helmet,
+  galleryImages,
 }) => {
   const PostContent = contentComponent || Content;
+  const images = galleryImages?.map((n) => n.childImageSharp);
 
   //TEMP video iframe stretch fixup, parsing not applicable to Netlify CMS
-  if(typeof content === 'string') {
+  if (typeof content === "string") {
     content = content.replace(
-        /<iframe/g,
-        '<div class="video-wrapper has-margin-bottom-15"><iframe'
+      /<iframe/g,
+      '<div class="video-wrapper has-margin-bottom-15"><iframe'
     );
     content = content.replace(/<\/iframe>/g, "</iframe></div>");
   }
@@ -35,6 +38,12 @@ export const PortfolioPostTemplate = ({
               {title}
             </h1>
             <p>{description}</p>
+            {/* Temp for fixing bug with external gallery library*/}
+            {images?.length > 0 && (
+              <div className="has-margin-right-10 has-margin-left-10 has-margin-bottom-15">
+                <Gallery gutter="5px" images={images} imgClass="gallery-image" />
+              </div>
+            )}
             <PostContent content={content} />
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
@@ -60,6 +69,7 @@ PortfolioPostTemplate.propTypes = {
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
+  galleryImages: PropTypes.array,
   helmet: PropTypes.object,
 };
 
@@ -72,6 +82,7 @@ const PortfolioPost = ({ data }) => {
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
+        galleryImages={post.frontmatter.galleryImages}
         helmet={
           <Helmet titleTemplate="%s | Blog">
             <title>{`${post.frontmatter.title}`}</title>
@@ -105,6 +116,16 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         description
+        galleryImages {
+          childImageSharp {
+            thumb: fluid(maxWidth: 270, maxHeight: 270) {
+              ...GatsbyImageSharpFluid
+            }
+            full: fluid(quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         tags
       }
     }

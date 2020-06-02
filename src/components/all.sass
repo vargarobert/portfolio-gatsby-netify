@@ -1,4 +1,5 @@
 @import "~bulma/sass/utilities/initial-variables"
+@import '~@browniebroke/gatsby-image-gallery/dist/style.css'
 
 // Config vars
 $rv-mustard: #F8C103 //#D64000
@@ -23,11 +24,12 @@ $menu-label-color: $white-ter
 
 
 @import "~bulma"
+@import "~bulma-helpers/css/bulma-helpers.min.css"
 @import "sass/layout"
 @import "sass/header"
 @import "sass/card"
 @import "sass/button"
-@import "~bulma-helpers/css/bulma-helpers.min.css"
+@import "sass/portfolio"
 
 
 
@@ -133,19 +135,6 @@ footer.footer
 .blog-list-item .featured-thumbnail
   flex-basis: 35%
   margin: 0 1.5em 0 0
-
-.video-wrapper
-  position: relative
-  padding-bottom: 56.25% /* 16:9 */
-  height: 0
-
-.video-wrapper
-  iframe
-    position: absolute
-    top: 0
-    left: 0
-    width: 100%
-    height: 100%
 
 
 // responsiveness
