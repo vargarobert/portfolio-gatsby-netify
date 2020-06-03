@@ -21,3 +21,5 @@ Share, tweet your favourite stories with the tap of a button.
 Client: Native iOS integration - Objective-C (various CocoaPods frameworks), fully customised interface components (.nib based)\
 Backend: Parse (backend as a service), No-SQL DB, Twitter API\
 CMS: HTML5, Bootstrap, AngularJS
+
+<https://github.com/vargarobert/Tech-Digest>
