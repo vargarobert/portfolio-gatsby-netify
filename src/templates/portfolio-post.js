@@ -37,11 +37,15 @@ export const PortfolioPostTemplate = ({
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
-            <p>{description}</p>
+            {description && <p>{description}</p>}
             {/* Temp for fixing bug with external gallery library*/}
             {images?.length > 0 && (
               <div className="has-margin-right-10 has-margin-left-10 has-margin-bottom-15">
-                <Gallery gutter="5px" images={images} imgClass="gallery-image" />
+                <Gallery
+                  gutter="5px"
+                  images={images}
+                  imgClass="gallery-image"
+                />
               </div>
             )}
             <PostContent content={content} />
