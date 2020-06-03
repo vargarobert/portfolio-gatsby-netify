@@ -21,8 +21,4 @@ Glance over the following analytics to make the best decision:
 * Sunshine Hours
 * Sea Temperature
 
-<a href="https://itunes.apple.com/us/app/travel-weather/id1347564035?ls=1&amp;mt=8" target="blank" rel="noopener noreferrer"><img class="alignnone" src="http://r.mzstatic.com/images/web/linkmaker/badge_appstore-lrg.gif" alt="Pocket Django - Robert Varga" width="146" /></a>
-
-
-
-![](/img/app-store-badge.svg)
+<a href="https://itunes.apple.com/us/app/travel-weather/id1347564035?ls=1&amp;mt=8" target="blank" rel="noopener noreferrer"><img class="alignnone" src="https://www.robert-varga.com/img/app-store-badge.svg" alt="Pocket Django - Robert Varga" width="146" /></a>
