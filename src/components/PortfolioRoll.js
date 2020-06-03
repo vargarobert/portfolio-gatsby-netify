@@ -37,7 +37,9 @@ class PortfolioRoll extends React.Component {
                   <div className="media">
                     <div className="media-content">
                       <div className="title is-6">{post.frontmatter.title}</div>
-                      <div className="subtitle is-7">{post.frontmatter.date}</div>
+                      <div className="subtitle is-7">
+                        {post.frontmatter.date}
+                      </div>
                     </div>
                   </div>
                   <div className="content is-size-7">{post.excerpt}</div>
@@ -81,7 +83,7 @@ export default () => (
                 featuredpost
                 featuredimage {
                   childImageSharp {
-                    fluid(maxWidth: 120, quality: 100) {
+                    fluid(maxWidth: 300, quality: 100) {
                       ...GatsbyImageSharpFluid
                     }
                   }
