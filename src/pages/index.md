@@ -3,9 +3,9 @@ templateKey: index-page
 title: Hello!
 image: /img/blog-index.jpg
 heading: Great coffee with a conscience
-subheading: " "
+subheading: ""
 mainpitch:
-  title: " "
+  title: ""
   description: >
     I’m Robert and I have a passion for UI/UX design and client-side engineering
     for the Web and iOS. Check out my portfolio to see what I’m up to!
