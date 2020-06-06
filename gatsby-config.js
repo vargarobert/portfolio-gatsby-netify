@@ -36,6 +36,12 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: 'gatsby-plugin-google-analytics',
+            options: {
+              trackingId: "UA-30873910-1",
+            },
+          },
+          {
             resolve: 'gatsby-remark-relative-images',
             options: {
               name: 'uploads',
