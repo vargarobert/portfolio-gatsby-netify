@@ -1,18 +1,18 @@
 ---
 templateKey: index-page
 title: Hello!
-image: /img/home-jumbotron.jpg
+image: /img/blog-index.jpg
 heading: Great coffee with a conscience
-subheading: ""
+subheading: " "
 mainpitch:
-  title: ""
+  title: " "
   description: >
-     I’m Robert and I have a passion for UI/UX design and client-side engineering for the Web and iOS. Check out my portfolio to see what I’m up to!
-description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+    I’m Robert and I have a passion for UI/UX design and client-side engineering
+    for the Web and iOS. Check out my portfolio to see what I’m up to!
+description: Kaldi is the ultimate spot for coffee lovers who want to learn
+  about their java’s origin and support the farmers that grew it. We take coffee
+  production, roasting and brewing seriously and we’re glad to pass that
+  knowledge to anyone.
 intro:
   blurbs:
     - image: /img/coffee.png
