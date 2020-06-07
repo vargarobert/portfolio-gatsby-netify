@@ -1,8 +1,8 @@
 import React from "react";
 
-const Header = ({ title, subheading, style }) => (
+const Header = ({ title, subheading, style, className }) => (
   <div
-    className={`header columns is-vertical full-width-image margin-top-0`}
+    className={`header columns is-vertical full-width-image margin-top-0 ${className}`}
     style={style}
   >
     {title && (

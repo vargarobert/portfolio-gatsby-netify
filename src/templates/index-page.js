@@ -21,10 +21,9 @@ export const IndexPageTemplate = ({
       style={{
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`,
-        backgroundPosition: `top left`,
-        backgroundAttachment: `fixed`,
+        })`
       }}
+      className="parallax-header"
       title={title}
       subheading={subheading}
     />
