@@ -4,6 +4,10 @@ title: 1968 Dodge Charger (3D Modelling and Animation)
 date: 2015-06-12T14:43:00.000Z
 featuredpost: false
 featuredimage: /img/charger2.png
+galleryImages:
+  - /img/charger2.png
+  - /img/charger3.png
+  - /img/charger.png
 tags:
   - Design and Media
 ---
