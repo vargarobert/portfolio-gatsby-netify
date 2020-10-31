@@ -17,7 +17,7 @@ class PortfolioRoll extends React.Component {
               key={post.id}
             >
               <article
-                className={`card no-flickr is-child ${
+                className={`card no-flickr is-child is-full-width ${
                   post.frontmatter.featuredpost ? "is-featured" : ""
                 }`}
               >
