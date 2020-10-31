@@ -7,12 +7,13 @@ featuredpost: false
 featuredimage: /img/breezi_placeit-copy.jpg
 galleryImages:
   - /img/percents_slideshow2-scaled.jpg
+  - /img/breezi_placeit-copy.jpg
 tags:
   - Software development
 ---
 Percents is an all-in-one percentage calculator that allows you to get the result effortlessly. A history section is also available to help you track the recent computations.
 
-\-- FEATURES --
+**Features:**
 
 * Percent Calculator
 * Percent Increase
