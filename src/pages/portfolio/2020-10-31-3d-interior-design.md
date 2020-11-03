@@ -1,6 +1,6 @@
 ---
 templateKey: portfolio-post
-title: 3D Interior design
+title: 3D Modelling (lounge)
 date: 2013-10-07T16:58:00.000Z
 featuredpost: false
 featuredimage: /img/3d_room_1.jpg
